@@ -1,0 +1,101 @@
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+/*Center text titles and text */
+h1, h2, h4 {
+    text-align: center;
+}
+
+div.c {
+    text-align: center;
+}
+
+/*Align text at the head of columns to be center */
+td{
+    text-align: center;
+}
+
+/*Change style of blockquotes to stand out*/
+blockquote
+{
+    font-size: 16px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    margin-left: 32px;
+    border-left: 4px solid #CCC;
+    padding-left: 8px;
+}
+
+/*Change style of text for Starbucks page to stand out*/
+h4 {
+    font-size: 24;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, serif;
+}
+
+/* Allow for images to scale based on width of website */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/*Stylies for list */
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/*Set up text to wrap around an image */
+.TextWrapLeft {
+  float: left;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+/*Set up text to wrap around an image */
+.TextWrapRight {
+  float: right;
+  padding: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+/* Audio styling */
+audio
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: ridge;
+}
+
+form {
+    display: inline-block;
+}
+
+/* Add padding to text within the body on mobile platforms so the text doesn't run to the endge of the screen*/
+@media only screen and (max-width: 600px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .responsive
+    {
+        max-width: 250px;
+    }
+}
+

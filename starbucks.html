@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Starbucks</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="animorphs.html">Animorphs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="running.html">Running</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="starbucks.html">Starbucks</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <h1>Starbucks and Sleep</h1>
+            <img class = "TextWrapLeft" src="https://dnl7t01l0fo05.cloudfront.net/fr/wp-content/uploads/sites/2/2016/10/chat-10-commandements-2.jpg"
+            alt = "Man I want a cat someday" style = "width:200px;height:200px;">
+        <br>
+            <p>I work part time at Starbucks. I've started working there in since Novemeber 2019. I don't drink coffee, so it's been a wild ride to see how dedicated people
+            will wake up as soon as we open to get their morning cup of Joe before heading into work. Also working at Starbucks during Covid-19 has been a unique experience.
+            </p>
+            <p>Working at Starbucks is working in retail, and the first step to having a good shift at Starbucks is getting good sleep. This can be a little challenging,
+            since shift work means your start times might vary wildly so it's hard to get consistent sleep.
+            </p>
+        <h2>
+            National Sleep Foundation
+        </h2>
+                <div class = "center">
+                For most adults, The National Sleep Foundation recomends between <b>7-9 hours of sleep</b> per night, having a consistent bedtime, 
+                and avoiding looking at electronics before bedtime. They have an <i><a href = "https://www.sleepfoundation.org/sleep-guidelines-covid-19-isolation">excellent article for tips on getting good sleep during Covid-19.</i></a>
+                </div>
+            <h4>Sleep Relaxation Techniques
+            </h4>
+                <div class = "c">
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/5OhOk7OXNFE?controls=0">
+                    </iframe>
+                    <p>See embedded video for more information.</p>
+                </div>
+        <h4>
+            Waking up for those early morning shifts
+        </h4>
+        <div class = "c">
+            <p>Getting enough sleep for Starbucks is really important so you aren't a zombie when treating customers.<br>
+            I created a tool to show my reaction to how much sleep I before a shift.</p>
+            <br>
+            <p>Enter the hours (In Decimal Hour) of sleep I will get before a shift</p>
+        </div>
+
+        <form class = "center" action = "myFunction()">
+            <div = "d-flex">
+                <input id="numb">
+                <button type="button" onclick="myFunction()">Submit</button>
+            </div>
+        </form>
+
+        </div>
+
+        <h4 id="demo">How is today going to go?</h4>
+
+            <img class = "center" src="images/thinking.jpg" alt="How will today go?" id="scott_face" style = "width:200px; height:266px;">
+        <script>
+        function myFunction () {
+            // Get value of input field with id = "numb"
+
+            hours = document.getElementById("numb").value;
+
+            // Check to see how I will feel at work the next day
+            if (hours >= 6 && hours <= 7) {
+                document.getElementById("scott_face").src = "images/ok_sleep.jpg";
+                text = "Average day, doing OK!";
+            } else if (hours > 7) {
+                document.getElementById("scott_face").src = "images/happy_sleep.jpg";
+                text = "Wow, that's awesome! Nice job!";
+            } else {
+                document.getElementById("scott_face").src = "images/sad_sleep.jpg";
+                text = "It's ok you can take a nap after work";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        </script>
+    </body>
+</html>
